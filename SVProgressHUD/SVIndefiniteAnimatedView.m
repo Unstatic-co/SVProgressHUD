@@ -6,7 +6,7 @@
 //
 
 #import "SVIndefiniteAnimatedView.h"
-#import "SVProgressHUD.h"
+#import "SVProgressHUDView.h"
 
 @interface SVIndefiniteAnimatedView ()
 
