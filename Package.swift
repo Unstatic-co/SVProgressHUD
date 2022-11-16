@@ -1,13 +1,13 @@
-// swift-tools-version:5.7
+// swift-tools-version:5.6
 import PackageDescription
 
 let package = Package(
   name: "SVProgressHUD",
   platforms: [
-    .iOS(.v12), .tvOS(.v12)
+    .iOS(.v12), .tvOS(.v12),
   ],
   products: [
-    .library(name: "SVProgressHUD", targets: ["SVProgressHUD"])
+    .library(name: "SVProgressHUD", targets: ["SVProgressHUD"]),
   ],
   targets: [
     .target(
@@ -15,6 +15,7 @@ let package = Package(
       path: "SVProgressHUD",
       exclude: ["SVProgressHUD-Prefix.pch"],
       resources: [.copy("SVProgressHUD.bundle")],
-      publicHeadersPath: ".")
+      publicHeadersPath: "."
+    ),
   ]
 )
